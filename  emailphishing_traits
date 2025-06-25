@@ -1,0 +1,12 @@
+## 🚨 Phishing Traits Summary
+
+The phishing email from `sac@bradesco.com.br` demonstrates several classic phishing characteristics:
+
+- Spoofed sender address pretending to be a trusted bank
+- Sent from a non-legitimate IP (DigitalOcean server)
+- Subject line with urgency to manipulate the user
+- Missing SPF/DKIM details (spoofing risk)
+- Non-corporate and mismatched mail path
+- Designed to mislead users into revealing credentials or clicking malicious links
+
+Users should be trained to identify these red flags before interacting with any suspicious emails.

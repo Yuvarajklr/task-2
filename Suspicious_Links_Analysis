@@ -1,0 +1,64 @@
+
+## 📥 Extracted URLs
+
+Below are the URLs found in the phishing email impersonating `sac@bradesco.com.br`:
+
+### 🔗 URL #1 – Tracking Pixel
+- **Link:** [http://sstatic1.histats.com/0.gif?4787682&101](http://sstatic1.histats.com/0.gif?4787682&101)
+- **Purpose:** Image beacon for tracking if the email was opened.
+- **Verdict:** ⚠️ Suspicious. Common in phishing campaigns to confirm valid email addresses.
+
+---
+
+### 🔗 URL #2 – Google Cloud App
+- **Link:** [https://function-9-xka7zvb73a-rj.a.run.app](https://function-9-xka7zvb73a-rj.a.run.app)
+- **Purpose:** Potential redirection or phishing site hosted on Google Cloud.
+- **Verdict:** 🚨 Highly suspicious. `.run.app` services are often misused for phishing and credential harvesting.
+
+---
+
+## 📧 Extracted Emails
+
+- `rodrigo-f-p@hotmail.com`
+  - Possibly used as a **bait identity**, **reply-to address**, or **harvested email**.
+  - No direct connection to the impersonated sender domain `bradesco.com.br`.
+
+---
+
+## 🌐 Extracted Domains
+
+| Domain                               | Notes                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------|
+| `hotmail.com`                        | Free public email service — often misused for phishing replies       |
+| `function-9-xka7zvb73a-rj.a.run.app` | Google Cloud app domain — may host malicious script or fake form     |
+| `sstatic1.histats.com`               | Tracking server — used to monitor if email was opened or loaded      |
+
+---
+
+## 🧪 Risk Indicators
+
+- No link points to the official domain (`bradesco.com.br`)
+- Use of generic trackers and `.run.app` indicates social engineering intent
+- Likely used to:
+  - **Redirect to a fake login page**
+  - **Collect user data**
+  - **Install malware if link is followed**
+
+---
+
+## 🛡️ Recommendation
+
+> These URLs are **phishing indicators** and should be analyzed only in a sandboxed environment or with online tools:
+
+- [🔍 VirusTotal](https://virustotal.com)
+- [🔎 urlscan.io](https://urlscan.io)
+- [🧬 Hybrid Analysis](https://www.hybrid-analysis.com)
+
+**Do not click these links in a production environment.**
+
+---
+
+## 📌 Conclusion
+
+This email contained embedded links that serve no legitimate business function. They attempt to appear legitimate while avoiding detection. The use of cloud-hosted phishing pages and tracking tools are signs of an advanced phishing strategy.
+
